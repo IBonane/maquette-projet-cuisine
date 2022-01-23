@@ -145,6 +145,12 @@ body {
     margin-right: 10px;
 }
 
+#nav-mobile{
+    display: none;
+}
+
+
+
 /*Responsive*/
 
 @media screen and (max-width: 1000px) {
@@ -154,6 +160,16 @@ body {
     .side-nav{
         display: none;
     }
+
+    #nav-mobile{
+        display: block;
+    }
+
+    #nav-mobile i{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
 
     .main-content{
         grid-column: 1;
@@ -180,5 +196,9 @@ body {
         height: auto;
         text-align: center;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .div-edit-bottom{
+        margin-bottom: 14px;
     }
 }

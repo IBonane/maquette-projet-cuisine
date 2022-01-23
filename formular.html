@@ -18,113 +18,138 @@
 <body>
     <div class="global-conatiner">
         <nav class="side-nav">
-            <div class="nav-logo">
-                <a style="font-size: 30px;" href="#" class="nav-link"> 
-                    <i class="fas fa-utensils text-warning"></i>
-                   <span class="text-warning" style="position: relative; top: 4px;">User</span> 
-                </a>
-                
-            </div>
+          <div class="nav-logo">
+              <a style="font-size: 20px;" href="index.html" class="nav-link"> 
+                  <i class="fas fa-utensils text-warning"></i>
+                <span class="text-warning" style="position: relative; top: 4px;">Déconnexion</span> 
+              </a>
+              
+          </div>
 
-            <a href="formular.html" class="block-link active">
-                <span class="nav-links">Tableau de bord</span>
-            </a>
+          <a href="formular.html" class="block-link active">
+              <span class="nav-links">Tableau de bord</span>
+          </a>
 
-            <a href="liste-recette.html" class="block-link">
-                <span class="nav-links">Liste de mes recettes</span>
-            </a>
+          <a href="liste-recette.html" class="block-link">
+              <span class="nav-links">Liste de mes recettes</span>
+          </a>
 
-            <a href="index.html" class="block-link">
-                <span class="nav-links">Acceuil</span>
-            </a>
+          <a href="user.html" class="block-link">
+              <span class="nav-links">Acceuil</span>
+          </a>
         </nav>
-
+      </div>
 
         <main class="main-content" style="background: url(banner.png) no-repeat center/cover;">
+         
+          <!--NAVBAR Mobile-->
+          <nav class="navbar navbar-expand-xl navbar-light bg-dark fixed-top" id="nav-mobile">
+            <i id="menu-icon" class="fa-3x fas fa-hamburger text-light" data-bs-toggle="collapse" data-bs-target="#nav"></i>
+            <div class="collapse navbar-collapse justify-content-around" id="nav">
+                <ul class="navbar-nav">         
+                    <li class="nav-item">
+                      <a href="formular.html" class="block-link active">
+                        <span class="nav-links">Tableau de bord</span>
+                    </a>
+                    </li>
 
-            <section class="vh-150">
-                <div class="container h-100" style="margin-top: 100px;">
-                  <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col-xl-9">
-                                         
-                      <div class="card" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <h1 class="text-center">Ajout d'une nouvelle Recette</h1>
-                          <div class="row align-items-center pt-4 pb-3">
-                            <div class="col-md-3 ps-5">
-              
-                              <h6 class="mb-0">Nom de la recette</h6>
-              
-                            </div>
-                            <div class="col-md-9 pe-5">
-              
-                              <input type="text" class="form-control form-control-lg" />
-              
-                            </div>
-                          </div>
-              
-                          
-                          
-                          <hr class="mx-n3">
-              
-                          <div class="row align-items-center py-3">
-                            <div class="col-md-3 ps-5">
-                
-                                <h6 class="mb-0">Liste des ingrédients</h6>
-                
-                            </div>
-                            <div class="col-md-9 pe-5">
-                
-                                <textarea class="form-control" rows="3"></textarea>
-                
-                            </div>
-                           </div>
-                           <hr class="mx-n3">
+                    <li class="nav-item dropdown">
+                      <a href="liste-recette.html" class="block-link">
+                        <span class="nav-links">Liste de mes recettes</span>
+                    </a>
+                    </li>
 
-                           <div class="row align-items-center py-3">
-                            <div class="col-md-3 ps-5">
-                
-                                <h6 class="mb-0">Description de la recette</h6>
-                
-                            </div>
-                            <div class="col-md-9 pe-5">
-                
-                                <textarea class="form-control" rows="3"></textarea>
-                
-                            </div>
-                           </div>
-              
-                          <hr class="mx-n3">
-              
-                          <div class="row align-items-center py-3">
-                            <div class="col-md-3 ps-5">
-              
-                              <h6 class="mb-0">Image du plat cuisiné</h6>
-              
-                            </div>
-                            <div class="col-md-9 pe-5">
-              
-                              <input class="form-control form-control-lg" id="formFileLg" type="file" />
-                              <div class="small text-muted mt-2">Ajouter une iamge de bonne qualité. taille maximum 50 MB</div>
-              
-                            </div>
-                          </div>
-              
-                          <hr class="mx-n3">
-              
-                          <div class="px-5 py-4">
-                            <a href="./liste-recette.html"><button type="submit" class="btn btn-primary btn-lg">Enregistrer</button></a>
-                          </div>
-              
+                    <li class="nav-item" id="user">
+                      <a href="index.html" class="block-link">
+                        <span class="nav-links">Acceuil</span>
+                    </a>
+                    </li>         
+                </ul>
+            </div>
+          </nav>
+          <!--END NAVBAR Mobile-->
+          
+          <section class="vh-150">
+            <div class="container h-100" style="margin-top: 200px;">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-9">
+                                      
+                  <div class="card" style="border-radius: 15px;">
+                    <div class="card-body">
+                        <h1 class="text-center">Ajout d'une nouvelle Recette</h1>
+                      <div class="row align-items-center pt-4 pb-3">
+                        <div class="col-md-3 ps-5">
+          
+                          <h6 class="mb-0">Nom de la recette</h6>
+          
+                        </div>
+                        <div class="col-md-9 pe-5">
+          
+                          <input type="text" class="form-control form-control-lg" />
+          
                         </div>
                       </div>
-              
+          
+                      
+                      
+                      <hr class="mx-n3">
+          
+                      <div class="row align-items-center py-3">
+                        <div class="col-md-3 ps-5">
+            
+                            <h6 class="mb-0">Liste des ingrédients</h6>
+            
+                        </div>
+                        <div class="col-md-9 pe-5">
+            
+                            <textarea class="form-control" rows="3"></textarea>
+            
+                        </div>
+                        </div>
+                        <hr class="mx-n3">
+
+                        <div class="row align-items-center py-3">
+                        <div class="col-md-3 ps-5">
+            
+                            <h6 class="mb-0">Description de la recette</h6>
+            
+                        </div>
+                        <div class="col-md-9 pe-5">
+            
+                            <textarea class="form-control" rows="3"></textarea>
+            
+                        </div>
+                        </div>
+          
+                      <hr class="mx-n3">
+          
+                      <div class="row align-items-center py-3">
+                        <div class="col-md-3 ps-5">
+          
+                          <h6 class="mb-0">Image du plat cuisiné</h6>
+          
+                        </div>
+                        <div class="col-md-9 pe-5">
+          
+                          <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                          <div class="small text-muted mt-2">Ajouter une iamge de bonne qualité. taille maximum 50 MB</div>
+          
+                        </div>
+                      </div>
+          
+                      <hr class="mx-n3">
+          
+                      <div class="px-5 py-4">
+                        <a href="./liste-recette.html"><button type="submit" class="btn btn-primary btn-lg">Enregistrer</button></a>
+                      </div>
+          
                     </div>
                   </div>
+          
                 </div>
-              </section>
-           
-            
+              </div>
+            </div>
+          </section> 
         </main>
     </div>
 </body>
